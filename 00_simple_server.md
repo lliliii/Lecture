@@ -3,11 +3,11 @@ sudo apt-get install tor
 vi /etc/tor/torrc
 ```
 
-수정할 내용
-
+수정할 내용 (주석 제거)
 ```
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:8000
+systemctl tor.service restart
 ```
 
 ```
